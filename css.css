@@ -1,0 +1,166 @@
+.header {
+    padding: 80px;
+    text-align: -webkit-center;
+    background: #cccc00;
+    color: blue;
+}
+
+.header h1 {
+    font-size: 60px;
+}
+
+.header h3 {
+    font-size: 40px;
+}
+
+.header h4 {
+    font-size: 50px;
+}
+
+.header p {
+    font-size: 40px;
+}
+
+/* верхняя панель навигации */
+.navbar {
+    overflow: hidden; /* Скрыть переполнение */
+    background-color: #cccc00; 
+}
+
+.sidenav {
+    height: 100%; /* полный экран */
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; 
+}
+
+/* Верхняя навигация */
+.sidenav a {
+    padding: 8px 8px 8px 30px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+/* Кнопка открытия */
+.colenav {
+    font-size: 60px;
+}
+
+/* баковая модель */
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: black; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+
+.navbar a.right {
+    float: right; 
+}
+
+/* изменения слайда */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+#main {
+    transition: margin-left .5s;
+    padding: 30px;
+}
+
+@media screen and (max-height: 600px) {
+    .sidenav {padding-top: 20px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* содержание*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: cccc00;
+}
+
+/* основная инормация*/
+.side {
+    flex: 30%;
+    background-color: #cccc00;
+    padding: 20px; 
+}
+
+/*дополнительная информация*/
+.main {
+    flex: 70%;
+    background-color: #cccc00;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.gallery {
+    margin-top: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    font-size: 13px;
+    display: flex;
+    padding: 0px;
+   
+}
+
+.footer p {
+    margin-right: 67px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+}
+
+.tel {
+    margin-left: auto;
+}
+
+.video {
+    text-align: center;
+}
